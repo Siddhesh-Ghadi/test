@@ -1,0 +1,13 @@
+dist: bionic
+
+arch:
+- amd64
+- ppc64le
+
+language: ruby
+
+rvm:
+- 2.5.7
+
+script:
+- ruby -e 'puts Time.now'
