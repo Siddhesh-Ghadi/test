@@ -11,3 +11,4 @@ rvm:
 
 script:
 - ruby -e 'puts Time.now'
+- locale -a
