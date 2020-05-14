@@ -12,3 +12,10 @@ rvm:
 script:
 - ruby -e 'puts Time.now'
 - locale 
+- npm install npm@latest
+- npm i gnomon
+- export PATH=$PATH:$PWD/node_modules/.bin/
+- bundle update --bundler
+- gem install ovirt-engine-sdk -v 4.3.1|gnomon --real-time=false
+- gem install websocket-driver -v 0.6.5|gnomon --real-time=false
+- gem install surro-gate -v 1.0.5|gnomon --real-time=false
